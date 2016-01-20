@@ -1,0 +1,169 @@
+/*                                      fonts */
+@font-face {
+  font-family: "Helvetica";
+  src: url("font/helveticaitalic.woff2") format("woff2"),
+       url("font/helveticaitalic.woff") format("woff"),
+       url("font/helveticaitalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("font/helveticaneuecyr-bold.woff2") format("woff2"),
+       url("font/helveticaneuecyr-bold.woff") format("woff"),
+       url("font/helveticaneuecyr-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: 700;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("font/helveticaneuecyr-light.woff2") format("woff2"),
+       url("font/helveticaneuecyr-light.woff") format("woff"),
+       url("font/helveticaneuecyr-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("font/helveticaneuecyr-medium.woff2") format("woff2"),
+       url("font/helveticaneuecyr-medium.woff") format("woff"),
+       url("font/helveticaneuecyr-medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("font/helveticaneuecyr-roman.woff2") format("woff2"),
+       url("font/helveticaneuecyr-roman.woff") format("woff"),
+       url("font/helveticaneuecyr-roman.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("font/helveticaregular.woff2") format("woff2"),
+       url("font/helveticaregular.woff") format("woff"),
+       url("font/helveticaregular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*                                      global classes */
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p, 
+ul, 
+li, 
+blockquote, 
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 1044px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.sprite {
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-arrow-leftproject- {
+  width: 8px;
+  height: 16px;
+  background-position: -5px -5px;
+}
+
+.sprite-arrow-rightproject- {
+  width: 8px;
+  height: 16px;
+  background-position: -23px -5px;
+}
+
+.sprite-icon-mail {
+  width: 20px;
+  height: 14px;
+  background-position: -41px -5px;
+}
+
+.sprite-promo-icon-beautify {
+  width: 113px;
+  height: 99px;
+  background-position: -71px -5px;
+}
+
+.sprite-promo-icon-design {
+  width: 112px;
+  height: 99px;
+  background-position: -5px -114px;
+}
+
+.sprite-promo-icon-garden {
+  width: 113px;
+  height: 99px;
+  background-position: -194px -5px;
+}
+
+.sprite-promo-icon-greenery {
+  width: 113px;
+  height: 101px;
+  background-position: -127px -114px;
+}
+
+.sprite-social-fb {
+  width: 6px;
+  height: 14px;
+  background-position: -317px -5px;
+}
+
+.sprite-social-tw {
+  width: 14px;
+  height: 11px;
+  background-position: -333px -5px;
+}
+
+.sprite-social-vk {
+  width: 17px;
+  height: 10px;
+  background-position: -333px -26px;
+}
