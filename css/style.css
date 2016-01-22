@@ -1,57 +1,56 @@
 /*                                      fonts */
 @font-face {
+  font-weight: 800;
+  font-style: italic;
   font-family: "Helvetica";
   src: url("font/helveticaitalic.woff2") format("woff2"),
        url("font/helveticaitalic.woff") format("woff"),
        url("font/helveticaitalic.ttf") format("truetype");
-  font-weight: 800;
-  font-style: italic;
 }
 
 @font-face {
+  font-weight: normal;
+  font-style: normal;
   font-family: "Helvetica Neue";
   src: url("font/helveticaneuecyr-bold.woff2") format("woff2"),
        url("font/helveticaneuecyr-bold.woff") format("woff"),
        url("font/helveticaneuecyr-bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: 700;
 }
 
 @font-face {
+  font-weight: 300;
+  font-style: normal;
   font-family: "Helvetica Neue";
   src: url("font/helveticaneuecyr-light.woff2") format("woff2"),
        url("font/helveticaneuecyr-light.woff") format("woff"),
        url("font/helveticaneuecyr-light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-
 }
 
 @font-face {
+  font-weight: 600;
+  font-style: normal;
   font-family: "Helvetica Neue";
   src: url("font/helveticaneuecyr-medium.woff2") format("woff2"),
        url("font/helveticaneuecyr-medium.woff") format("woff"),
        url("font/helveticaneuecyr-medium.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
 }
 
 @font-face {
+  font-weight: 500;
+  font-style: normal;
   font-family: "Helvetica Neue";
   src: url("font/helveticaneuecyr-roman.woff2") format("woff2"),
        url("font/helveticaneuecyr-roman.woff") format("woff"),
        url("font/helveticaneuecyr-roman.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
 }
 
 @font-face {
+  font-weight: normal;
+  font-style: normal;
   font-family: "Helvetica";
   src: url("font/helveticaregular.woff2") format("woff2"),
        url("font/helveticaregular.woff") format("woff"),
        url("font/helveticaregular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 
 
@@ -63,11 +62,6 @@
 *:before,
 *:after {
   box-sizing: border-box;
-}
-
-body {
-  font-family: "Helvetica Neue", "Helvetica" "Arial", sans-serif;
-  font-weight: 300;
 }
 
 h1, 
@@ -85,6 +79,11 @@ figure {
   padding: 0;
 }
 
+body {
+  font-weight: 300;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -99,89 +98,65 @@ a {
 }
 
 .section-btn {
-  font-size: 14px;
-  color: white;
   background-color: #65abd0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
-.sprite {
-  background-image: url(spritesheet.png);
-  background-repeat: no-repeat;
-  display: block;
-}
-
-.sprite-arrow-leftproject- {
-  width: 8px;
-  height: 16px;
-  background-position: -5px -5px;
-}
-
-.sprite-arrow-rightproject- {
-  width: 8px;
-  height: 16px;
-  background-position: -23px -5px;
+  color: white;
+  font-size: 14px;
 }
 
 
 /*                                         promo */
 .promo {
-  min-height: 674px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  min-height: 674px;
 }
 
 .promo:before {
-  content: "Driada";
-  text-transform: uppercase;
   position: absolute;
-  left: 0;
   right: 0;
   bottom: -79px;
+  left: 0;
   margin: 0 auto;
-  font-size: 154px;
-  color: white;
-  font-weight: 700;
-  font-family: "Arial Black", "Helvetica", sans-serif;
   width: 645px;
+  color: white;
+  content: "Driada";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 154px;
+  font-family: "Arial Black", "Helvetica", sans-serif;
 }
 
 .promo-title,
 .promo-subtitle {
+  padding-left: 60px;
+  width: 700px;
   color: white;
   text-transform: uppercase;
   font-weight: 500;
   font-family: "Helvetica Neue";
-  padding-left: 60px;
-  width: 700px;
 }
 
 .promo-title {
-  font-size: 48px;
   margin-top: 116px;
+  font-size: 48px;
 }
 
 .promo-subtitle {
-  font-size: 24px;
   margin-top: 15px;
+  font-size: 24px;
 }
 
 .promo-header {
-  text-transform: none;
-  width: 500px;
   padding-top: 13px;
+  width: 500px;
+  text-transform: none;
 }
 
 .promo-text {
-  text-transform: none;
   padding-top: 7px;
-  font-size: 18px;
   width: 440px;
+  text-transform: none;
+  font-size: 18px;
   line-height: 1.25;
 }
 
@@ -195,58 +170,88 @@ img {
   background-size: cover;
 }
 
-.projects-garden-promo {
+.project-garden-promo {
   background: url(../img/project-garden/project-promo-bg.jpg) no-repeat center;
   background-size: cover;
 }
 
+.project-gatchina-promo {
+  background: url(../img/project-gatchina/project-promo-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.project-green-roscha-promo {
+  background: url(../img/project-green-roscha/project-promo-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.project-malinovo-promo {
+  background: url(../img/project-malinovo/project-promo-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.project-romanivka-promo {
+  background: url(../img/project-romanivka/project-promo-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.project-sosnovka-promo {
+  background: url(../img/project-sosnovka/project-promo-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.about-us-promo {
+  background: url(../img/services-promo-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
 .header {
-  background-color: rgba(0,0,0,.3);
+  position: relative;
   overflow: hidden;
   padding-top: 37px;
   padding-bottom: 26px;
+  background-color: rgba(0,0,0,.3);
   color: white;
-  position: relative;
-  font-family: "Helvetica";
   font-weight: normal;
+  font-family: "Helvetica";
 }
 
 .header-padding {
-  padding-left: 74px;
   padding-right: 74px;
+  padding-left: 74px;
 }
 
 .header-contact {
-  text-align: left;
   float: left;
+  text-align: left;
   font-weight: 300;
 }
 
 .header-logo {
   position: absolute;
-  left: 0;
-  right: 0;
   top: 23px;
+  right: 0;
+  left: 0;
   margin: 0 auto;
   width: 72px;
 }
 
 .header-menu {
-  text-align: right;
   float: right;
+  text-align: right;
 }
 
 .header-callback {
-  font-style: italic;
-  font-size: 14px;
   color: white;
   text-decoration: underline;
+  font-style: italic;
+  font-size: 14px;
 }
 
 .header-phone {
   display: block;
-  font-size: 24px;
   padding-top: 3px;
+  font-size: 24px;
 }
 
 .header-menu ul {
@@ -254,11 +259,11 @@ img {
 }
 
 .header-menu li {
+  display: inline-block;
+  padding-bottom: 12px;
+  padding-left: 15px;
   text-transform: uppercase;
   font-size: 14px;
-  padding-left: 15px;
-  padding-bottom: 12px;
-  display: inline-block;
 }
 
 .header-menu a:hover, .header-menu a.active {
@@ -284,12 +289,12 @@ img {
 }
 
 .promo-service-item a {
-  margin-top: 126px;
   display: block;
+  margin-top: 126px;
   text-transform: uppercase;
+  font-weight: 300;
   font-size: 14px;
   font-family: "Helvetica Neue";
-  font-weight: 300;
 }
 
 .promo-icon-design,
@@ -303,16 +308,16 @@ img {
 .promo-icon-design:before,
 .promo-icon-garden:before,
 .promo-icon-greenery:before {
-  content: "";
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
   position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
   width: 113px;
   height: 101px;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .promo-icon-beautify:before {
@@ -334,36 +339,36 @@ img {
 
 /*                                         about */
 .about {
+  padding-top: 15px;
   background: url("../img/pattern-bg.png") no-repeat center;
   background-size: cover;
-  font-family: "Helvetica Neue";
-  font-weight: 300;
-  padding-top: 15px;
   text-align: center;
+  font-weight: 300;
+  font-family: "Helvetica Neue";
 }
 
 .about-title {
   color: #0199ec;
-  font-size: 30px;
   text-transform: uppercase;
+  font-size: 30px;
 }
 
 .about-subtitle,
 .about-text {
-  width: 460px;
   margin: 0 auto;
+  width: 460px;
 }
 
 .about-subtitle {
-  font-size: 20px;
-  font-weight: 300;
   padding-top: 72px;
   padding-bottom: 27px;
+  font-weight: 300;
+  font-size: 20px;
 }
 
 .about-text {
-  font-size: 16px;
   padding-bottom: 90px;
+  font-size: 16px;
 }
 
 
@@ -373,10 +378,10 @@ img {
 }
 
 .advantages-item {
-  width: 33%;
   float: left;
-  text-align: center;
   margin: 0 1px;
+  width: 33%;
+  text-align: center;
 }
 
 .advantages-team,
@@ -398,10 +403,10 @@ img {
 }
 
 .advantages-text {
-  font-size: 16px;
-  text-transform: uppercase;
-  background-color: #eaeaeb;
   padding: 32px;
+  background-color: #eaeaeb;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 
@@ -423,16 +428,16 @@ img {
 }
 
 .main-title {
-  font-size: 48px;
-  font-weight: 300;
   padding-bottom: 76px;
+  font-weight: 300;
+  font-size: 48px;
 }
 
 .main-text {
+  padding-bottom: 74px;
+  width: 300px;
   color: #888888;
   font-size: 14px;
-  width: 300px;
-  padding-bottom: 74px;
   line-height: 1.25;
 }
 
@@ -448,10 +453,10 @@ img {
 
 .main-project-designer-text {
   display: block;
-  font-size: 14px;
-  font-weight: 600;
-  width: 115px;
   margin-top: 7px;
+  width: 115px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 
@@ -478,32 +483,31 @@ img {
 
 /*                                         consultation-promo */
 .consultation-promo {
+  margin-top: 81px;
   height: 265px;
   background: url("../img/decorative-bg.jpg") no-repeat center;
-  margin-top: 81px;
   background-size: cover;
 }
 
 .consultation {
-  background-color: #e5e5e5;
   padding: 51px 0;
+  background-color: #e5e5e5;
   text-align: center;
 }
 
 .consultation-title {
-  font-size: 36px;
-  font-weight: 300;
   padding-bottom: 38px;
+  font-weight: 300;
+  font-size: 36px;
 }
 
 .consultation-form {
-  
 }
 
 .consultation-form label {
-  font-size: 14px;
-  font-weight: 600;
   margin-right: 30px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .consultation-form input[type="email"],
@@ -516,8 +520,8 @@ img {
 }
 
 .consultation-form input[type="email"] {
-  width: 320px;
   padding-left: 40px;
+  width: 320px;
 }
 
 .mail-icon {
@@ -526,19 +530,19 @@ img {
 
 .mail-icon:before {
   position: absolute;
-  content: "";
-  background-image: url(../img/spritesheet.png);
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 14px;
-  background-position: -41px -5px;
   top: 3px;
   left: 9px;
+  width: 20px;
+  height: 14px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -41px -5px;
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .consultation-form input[type="submit"] {
-  width: 177px;
   margin-left: 30px;
+  width: 177px;
 }
 
 
@@ -548,36 +552,36 @@ img {
 }
 
 .contact-information {
-  text-align: center;
-  background-color: white;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
   padding-top: 68px;
   padding-bottom: 45px;
   width: 640px;
-  margin: 0 auto;
-  z-index: 2;
-  position: relative;
+  background-color: white;
+  text-align: center;
 }
 
 .contact-title {
+  padding-bottom: 42px;
   font-weight: 300;
   font-size: 48px;
-  padding-bottom: 42px;
 }
 
 .contact-text {
+  padding-bottom: 49px;
   color: #888;
   font-size: 14px;
   line-height: 1.25;
-  padding-bottom: 49px;
 }
 
 .contact-map,
 .contact-office {
-  float: left;
-  width: 50%;
-  margin-top: -100px;
-  height: 450px;
   z-index: 1;
+  float: left;
+  margin-top: -100px;
+  width: 50%;
+  height: 450px;
 }
 
 
@@ -588,8 +592,8 @@ img {
 }
 
 .projects-padding {
-  padding-left: 141px;
   padding-right: 25px;
+  padding-left: 141px;
 }
 
 .projects-wrap {
@@ -598,63 +602,63 @@ img {
 }
 
 .projects-title {
-  font-size: 48px;
-  font-weight: 300;
   text-transform: uppercase;
+  font-weight: 300;
+  font-size: 48px;
 }
 
 .projects-item {
-  width: 30%;
   float: left;
+  width: 30%;
 }
 
 .projects-img {
-  margin-bottom: 11px;
   position: relative;
+  margin-bottom: 11px;
 }
 
 .projects-text {
-  font-size: 20px;
-  font-weight: 300;
   position: absolute;
-  left: 0;
   right: 0;
-  margin: 0 auto;
   bottom: 18px;
+  left: 0;
+  margin: 0 auto;
   text-align: center;
+  font-weight: 300;
+  font-size: 20px;
 }
 
 
 /* about-project */
 .about-project {
   overflow: hidden;
-  font-size: 14px;
-  font-weight: normal;
   padding-top: 90px;
   padding-bottom: 85px;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 .about-project-padding {
-  padding-left: 71px;
   padding-right: 55px;
+  padding-left: 71px;
 }
 
 .about-project-text {
-  width: 50%;
   float: left;
+  width: 50%;
   line-height: 1.72;
 }
 
 .about-project-description-wrap {
-  width: 30%;
   float: left;
   padding-left: 50px;
+  width: 30%;
 }
 
 .about-project-designer-img {
-  width: 20%;
   float: right;
   padding-left: 29px;
+  width: 20%;
 }
 
 .about-project-designer-img img {
@@ -667,14 +671,14 @@ img {
 }
 
 .about-project-description tr {
-  margin-bottom: 8px;
   display: block;
+  margin-bottom: 8px;
 }
 
 .about-project-description td:first-child {
   color: #6d6e71;
-  font-size: 12px;
   vertical-align: top;
+  font-size: 12px;
 }
 
 .about-project-description td {
@@ -682,8 +686,8 @@ img {
 }
 
 .about-project-description li {
-  list-style: none;
   padding-bottom: 8px;
+  list-style: none;
 }
 
 
@@ -710,9 +714,9 @@ img {
 }
 
 .img-horisontal {
+  margin-bottom: 27px;
   width: 630px;
   height: 269px;
-  margin-bottom: 27px;
 }
 
 .img-square {
@@ -721,16 +725,111 @@ img {
 }
 
 
+/*                                         about-us */
+.about-us {
+  overflow: hidden;
+  padding-top: 91px;
+  padding-bottom: 90px;
+}
+
+.about-us-text-wrap,
+.about-us-img {
+  float: left;
+  width: 50%;
+}
+
+.about-us-text-wrap {
+  padding-left: 82px;
+  color: #878787;
+  font-weight: normal;
+}
+
+.about-us-title {
+  padding-bottom: 66px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.about-us-text,
+.about-us-subtitle {
+  padding-left: 49px;
+  width: 440px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.about-us-subtitle {
+  padding-top: 42px;
+  padding-bottom: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.about-us-ul li {
+  list-style: none;
+}
+
+.about-us-img {
+  margin-top: 3px;
+}
+
+.about-us-img img {
+  border: 1px solid #000;
+}
+
+
+/*                                         offer */
+.offer {
+  padding-top: 47px;
+  background: url(../img/pattern-bg.png) no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+.offer-title,
+.offer-text {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.offer-title {
+  padding-bottom: 43px;
+  font-weight: 300;
+  font-size: 36px;
+}
+
+.offer-text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.offer-video {
+  margin-top: 52px;
+}
+
+.offer-video iframe {
+  border: none;
+}
+
+.about-us-consultation {
+  background-color: white;
+}
+
+.about-us-consultation input[type="email"] {
+  border: 2px solid #878787;
+}
+
+
 /*                                         footer */
 .footer {
-  padding-top: 48px;
   overflow: hidden;
+  padding-top: 48px;
   padding-bottom: 38px;
 }
 
 .footer-text {
-  font-size: 14px;
   display: inline-block;
+  font-size: 14px;
 }
 
 .copy {
